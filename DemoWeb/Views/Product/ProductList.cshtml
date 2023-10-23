@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using DemoWeb.Models
+
+@model List<Product>
+
+<div>
+    <h1>List of product</h1>
+    @foreach(Product p in Model)  {
+        <div>
+            <div>Product Id: @p.ProductId</div>
+            <div>ProductName: @p.ProductId</div>
+        </div>    
+    }
+</div>

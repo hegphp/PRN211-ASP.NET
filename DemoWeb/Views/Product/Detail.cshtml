@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using DemoWeb.Models
+
+<div>
+    <h1><Action: Detail</h1>
+    <p>ProductId: @ViewData["id"]</p>
+    <p>ProductId: @(((Product)ViewData["product"]).ProductId)</p>
+    <p>ProductId: @(((Product)ViewData["product"]).ProductName)</p>
+</div>
+
+<div>
+    <h1>Demo ViewBag</h1>
+    <p>@ViewBag.MyProduct.ProductId</p>
+    <p>@(((Product)ViewData["myPrODuCt"]).ProductName)</p>
+</div>
