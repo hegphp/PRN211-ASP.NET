@@ -11,6 +11,6 @@
 <div>
     <h1 style="text-align:center">Product List</h1>
     @foreach(var p in Model) {
-        <p>Product Id: @p.ProductId - Product Name: @p.ProductName - UnitPrice: @p.UnitPrice</p>
+        <p><a href="/product/detail/@p.ProductId">@p.ProductName </a></p>
     }
 </div>

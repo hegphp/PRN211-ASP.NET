@@ -11,5 +11,9 @@ namespace WebProject20_10_23.Logic {
         public List<Product> GetProductsByCateId(int cateId) {
             return _context.Products.Where(p => p.CategoryId == cateId).ToList();
         }
+
+        public Product GetProductById(int productId) {
+            return _context.Products.FirstOrDefault(p => p.ProductId == productId);
+        }
     }
 }

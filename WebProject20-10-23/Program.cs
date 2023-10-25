@@ -10,9 +10,14 @@ app.MapControllerRoute(
     defaults: new { action = "Index"}
     );
 
-app.MapControllerRoute(
-    name: "Product Route",
-    pattern: "/{controller=product}/{action=list}/{cateId}"
-    );
+//app.MapControllerRoute(
+//    name: "Product Route",
+//    pattern: "/product/{action=list}/{cateId}"
+//    );
+
+//app.MapControllerRoute(
+//    name: "Product Details Route",
+//    pattern: "/product/{action=detail}/{productId}"
+//    );
 
 app.Run();
